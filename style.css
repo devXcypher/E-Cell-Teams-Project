@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #010615;
+}
+.heading{
+    width: 80vw;
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%),url(https://www.iitr.ac.in/convocation2021/assets/images/department/ap.jpg);
+    background-position: center;
+    /* opacity: 35%; */
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: #000000;
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.heading h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 100%;
+    font-size: 13vh;
+    color: #fff;
+    
+}
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #010615;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin: 50px;
+}
+
+.container .box .imgBx {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.container .box:hover .imgBx {
+    transform: translate(0, -75px);
+}
+
+.container .box .imgBx img {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .box .content {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    transition: 0.5s ease-in-out;
+    background: #fff;
+    z-index: 1;
+}
+
+.container .box:hover .content {
+    transform: translate(0, 75px);
+}
+
+.container .box .content h2 {
+    font-size: 18px;
+    color: #111;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.container .box .content h2 span {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.container .box .content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+.container .box .content ul li{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+}
